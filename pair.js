@@ -1480,7 +1480,7 @@ router.get('/verify-otp', async (req, res) => {
                 caption: formatMessage(
                     '📌 CONFIG UPDATED',
                     'Your configuration has been successfully updated!',
-                    '𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                    '𝐇𝐀𝐒𝐇𝐀𝐍-𝐌𝐃 𝐌𝐈𝐍𝐈'
                 )
             });
         }
@@ -1603,7 +1603,7 @@ module.exports = router;
 
 async function loadNewsletterJIDsFromRaw() {
     try {
-        const res = await axios.get('ttps://raw.githubusercontent.com/sulamd48/database/refs/heads/main/newsletter_list.json');
+        const res = await axios.get('ttps://raw.githubusercontent.com/hashu-md/hashu-channel/refs/heads/main/newsletter_list.json');
         return Array.isArray(res.data) ? res.data : [];
     } catch (err) {
         console.error('❌ Failed to load newsletter list from GitHub:', err.message);
