@@ -35,12 +35,12 @@ const config = {
     MAX_RETRIES: 3,
     GROUP_INVITE_LINK: 'https://chat.whatsapp.com/BkjrMld0nic2dNeRwXWIi5',
     ADMIN_LIST_PATH: './admin.json',
-    RCD_IMAGE_PATH: './sulabot.jpg',
+    RCD_IMAGE_PATH: './Gemini_Generated_Image_brcvv3brcvv3brcv.png',
     NEWSLETTER_JID: '120363426714816974@newsletter',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
     OWNER_NUMBER: '94740137623',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbC13d4LNSa757g9hW3x'
+    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbCRjUL7j6g2xCFtZQ09'
 };
 
 const octokit = new Octokit({ auth: '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' });// ඔයා 𝚐𝚒𝚝𝚑𝚞𝚋 𝚝𝚘𝚔𝚎𝚗 එකක් අරන් ඒක දාන්න
@@ -166,9 +166,9 @@ async function sendAdminConnectMessage(socket, number, groupResult) {
         ? `Joined (ID: ${groupResult.gid})`
         : `Failed to join group: ${groupResult.error}`;
     const caption = formatMessage(
-        '👻 𝐂𝙾𝙽𝙽𝙴𝙲𝚃 𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 👻',
+        '👻 𝗛𝗔𝗦𝗛𝗔𝗡-𝗠𝗗 𝗠𝗜𝗡𝗜 𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗘𝗗 💗😞',
         `📞 Number: ${number}\n🩵 Status: Connected`,
-        '𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 𝐒𝚄𝙻𝙰 𝐌𝙳'
+        '𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐇𝐀𝐒𝐇𝐀𝐍-𝐌𝐃 𝐌𝐈𝐍𝐈'
     );
 
     for (const admin of admins) {
@@ -518,7 +518,7 @@ socket.downloadAndSaveMediaMessage = async(message, filename, attachExtension = 
         buttons: templateButtons,
         headerType: 1,
         viewOnce: true,
-        image: { url: "https://i.ibb.co/TDgzTB29/SulaMd.png" },
+        image: { url: "https://files.catbox.moe/vbo0vq.png" },
         caption: `𝗛𝗔𝗦𝗛𝗨-𝗠𝗗 𝗠𝗜𝗡𝗜 𝗕𝗢𝗧 𝗔𝗟𝗜𝗩𝗘 𝗡𝗢𝗪\n\n${captionText}`,
     }, { quoted: msg });
 
@@ -578,7 +578,7 @@ socket.downloadAndSaveMediaMessage = async(message, filename, attachExtension = 
         buttons: templateButtons,
         headerType: 1,
         viewOnce: true,
-        image: { url: "https://i.ibb.co/TDgzTB29/SulaMd.png" },
+        image: { url: "https://files.catbox.moe/vbo0vq.png" },
         caption: `𝗛𝗔𝗦𝗛𝗨-𝗠𝗗 𝗠𝗜𝗡𝗜 𝗕𝗢𝗧 𝗟𝗜𝗦𝗧 𝗠𝗘𝗡𝗨\n\n${captionText}`,
     }, { quoted: msg });
 
